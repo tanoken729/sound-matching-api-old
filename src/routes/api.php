@@ -19,5 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('test', function() {
-    return 'Lalavel Api Test';
+    return response()->json(['name' => '山田太郎', 'gender' => '男','mail' => 'yamada@test.com']);
 });
